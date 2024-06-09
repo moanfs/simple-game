@@ -35,7 +35,7 @@ const SetCard = ({ set, index, onRespond, onBack, isBackEnabled, showGuessButton
                         <button className={`border border-violet-500 hover:bg-violet-500 text-violet-500 rounded hover:text-white px-4 py-1 text-lg ${disable}`}  onClick={() => onRespond(true)}>Ya</button>
                     </div>
                     <div className="flex justify-center mt-3">
-                        <button className={`font-mono text-center flex items-center gap-2 cursor-pointer underline underline-offset-2 ${hidden}`} onClick={onBack}><FaHandPointLeft />Opss wrong</button>
+                        <button className={`font-mono text-center flex items-center gap-2 cursor-pointer underline underline-offset-2 ${hidden}`} onClick={onBack}><FaHandPointLeft />previous</button>
                     </div>
                     {showGuessButton && !guessedDate &&(  
                     <div className="flex justify-center mt-4">
