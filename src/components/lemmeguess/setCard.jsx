@@ -2,7 +2,7 @@
 import { FaHandPointLeft } from "react-icons/fa";
 import { FaHandPointUp } from "react-icons/fa";
 
-const SetCard = ({ set, index, onRespond, onBack, isBackEnabled, showGuessButton, onGuess, guessedDate, onReset}) =>{
+const SetCard = ({ set, index, onRespond, onBack, isBackEnabled, showGuessButton, guessedDate, onReset}) =>{
     const hidden = !isBackEnabled ? 'hidden' : '';
     const disable = showGuessButton ? 'opacity-50 cursor-not-allowed' :'';
     return(
@@ -37,13 +37,6 @@ const SetCard = ({ set, index, onRespond, onBack, isBackEnabled, showGuessButton
                     <div className="flex justify-center mt-3">
                         <button className={`font-mono text-center flex items-center gap-2 cursor-pointer underline underline-offset-2 ${hidden}`} onClick={onBack}><FaHandPointLeft />previous</button>
                     </div>
-                    {showGuessButton && !guessedDate &&(  
-                    <div className="flex justify-center mt-4">
-                        <div className="flex justify-center my-4">
-                            <button className='items-center hover:opacity-95 justify-center ring-none rounded-lg shadow font-medium py-2 px-4 font-mono bg-violet-500 border-b-violet-700 ring-white text-white border-b-4 hover:border-0 hover:text-gray-100' onClick={onGuess}>okey lemme guess your bday</button>
-                        </div>
-                    </div>
-                    )}
                 </>
                 )}
             </div>
