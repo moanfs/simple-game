@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 const Square = ({ value, onSquareClick })=>{
     return (
-        <button className="border w-16 h-16" onClick={onSquareClick}>
+        <button className="border w-20 h-20 text-5xl" onClick={onSquareClick}>
             {value}
         </button>
     )
